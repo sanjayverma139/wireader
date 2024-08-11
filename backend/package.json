@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node -r esm server.js",
     "dev": "nodemon -r esm server.js",
-    "build": "ynpm run build"
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "",
