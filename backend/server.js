@@ -1,18 +1,18 @@
 import express from "express";
 import dotenv from "dotenv";
 import path from "path";
-import connectDB from "./config/db.js";
+import connectDB from "./config/db";
 import cors from "cors";
 import {
   errorResponserHandler,
   invalidPathHandler,
-} from "./middleware/errorHandler.js";
+} from "./middleware/errorHandler";
 
 // Routes
-import userRoutes from "./routes/userRoutes.js";
-import postRoutes from "./routes/postRoutes.js";
-import commentRoutes from "./routes/commentRoutes.js";
-import postCategoriesRoutes from "./routes/postCategoriesRoutes.js";
+import userRoutes from "./routes/userRoutes";
+import postRoutes from "./routes/postRoutes";
+import commentRoutes from "./routes/commentRoutes";
+import postCategoriesRoutes from "./routes/postCategoriesRoutes";
 
 dotenv.config();
 connectDB();
